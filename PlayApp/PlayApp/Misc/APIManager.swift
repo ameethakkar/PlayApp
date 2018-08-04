@@ -21,7 +21,7 @@ class APIManager {
             self.orgName = orgName
         }
         
-        let todoEndpoint: String = baseURL + self.orgName + "/repos?page=\(page)&per_page=10&access_token=0fbc95a501f55414b06caf45daaa903c555a8ac3"
+        let todoEndpoint: String = baseURL + self.orgName + "/repos?page=\(page)&per_page=10"
         guard let url = URL(string: todoEndpoint) else {
             print("Error: cannot create URL")
             return
